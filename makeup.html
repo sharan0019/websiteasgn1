@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Brand - Makeup</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Custom pink theme styling */
+    body {
+      background-color: #ffe6f0; /* Light pink background */
+    }
+    .navbar {
+      background-color: #ff66b2; /* Soft pink for navbar */
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important; /* White text for navbar */
+    }
+    .navbar-toggler {
+      border-color: #ffffff; /* White border for mobile toggle */
+    }
+    h2 {
+      color: #d6006f; /* Darker pink heading color */
+      margin-bottom: 30px; /* Space below heading */
+      font-weight: bold; /* Make heading bold */
+    }
+    .card {
+      border: none;
+      border-radius: 15px; /* Rounded corners for cards */
+      overflow: hidden; /* Clip the inner content */
+      background-color: #fff0f5; /* Very light pink for card background */
+      transition: transform 0.2s; /* Smooth scale effect */
+    }
+    .card:hover {
+      transform: scale(1.05); /* Scale up on hover */
+    }
+    .card-title {
+      color: #ff66b2; /* Pink color for product titles */
+      font-weight: bold; /* Make product titles bold */
+    }
+    .card-text {
+      color: #d6006f; /* Darker pink for product descriptions */
+    }
+    footer {
+      background-color: #ff66b2; /* Match footer to navbar */
+      color: #ffffff; /* White text for footer */
+    }
+    .btn-primary {
+      background-color: #ff4d94; /* Bright pink for buttons */
+      border: none; /* Remove border */
+    }
+    .btn-primary:hover {
+      background-color: #ff66b2; /* Lighten on hover */
+    }
+
+    /* Style for uniform image size */
+    .card-img-top {
+      width: 100%;
+      height: 200px; /* Set a fixed height for all images */
+      object-fit: cover; /* Ensures the image covers the area without stretching */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Beauty Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="makeup.html">Makeup</a></li>
+        <li class="nav-item"><a class="nav-link" href="skincare.html">Skin Care</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="buyskincare.html">buy</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Makeup Products Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Makeup Products</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="foundation.jpeg" class="card-img-top" alt="Makeup Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Foundation</h5>
+              <p class="card-text">Flawless finish for all skin types.</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <!-- Additional makeup product cards -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="lipstick.jpeg" class="card-img-top" alt="Makeup Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Lipstick</h5>
+              <p class="card-text">Vibrant colors for every occasion.</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="eyeshadow.jpeg" class="card-img-top" alt="Makeup Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Eyeshadow Palette</h5>
+              <p class="card-text">Create stunning looks with our versatile shades.</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2024 Beauty Brand | All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

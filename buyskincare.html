@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Makeup & Skin Care Products</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styling for Makeup & Skin Care Products page */
+    body {
+      background-color: #ffe6f0; /* Light pink background */
+    }
+    .navbar {
+      background-color: #ff99cc; /* Soft pink for navbar */
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important; /* White text for navbar */
+    }
+    h2 {
+      color: #ff66b2; /* Pink heading color */
+    }
+    h5 {
+      color: #ff66b2; /* Pink product titles */
+    }
+    .btn-primary {
+      background-color: #ff66b2;
+      border-color: #ff66b2;
+    }
+    .card {
+      border: none;
+      margin-bottom: 30px;
+    }
+    .card img {
+      width: 100%;
+      height: 250px; /* Ensures all images are the same height */
+      object-fit: cover; /* Ensures the images cover the entire space */
+    }
+    .cart-section {
+      border-top: 2px solid #ff66b2;
+      margin-top: 30px;
+      padding-top: 20px;
+    }
+    footer {
+      background-color: #ff99cc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Beauty Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Makeup & Skin Care</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Buy Makeup & Skin Care Products</h2>
+      <div class="row">
+        <!-- Skin Care Product 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="hydrating.jpeg" class="card-img-top" alt="Hydrating Cream">
+            <div class="card-body">
+              <h5 class="card-title">Hydrating Cream</h5>
+              <p class="card-text">$25.00 - Keep your skin moisturized and glowing with our Hydrating Cream.</p>
+              <button class="btn btn-primary add-to-cart" data-product="Hydrating Cream" data-price="25.00">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Skin Care Product 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="anti aging.jpeg" class="card-img-top" alt="Anti-Aging Serum">
+            <div class="card-body">
+              <h5 class="card-title">Anti-Aging Serum</h5>
+              <p class="card-text">$40.00 - Combat signs of aging with our powerful Anti-Aging Serum.</p>
+              <button class="btn btn-primary add-to-cart" data-product="Anti-Aging Serum" data-price="40.00">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Skin Care Product 1 -->
+  
+        <!-- Makeup Product 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="lipstick.jpeg" class="card-img-top" alt="Matte Lipstick">
+            <div class="card-body">
+              <h5 class="card-title">Matte Lipstick</h5>
+              <p class="card-text">$15.00 - A long-lasting matte finish lipstick.</p>
+              <button class="btn btn-primary add-to-cart" data-product="Matte Lipstick" data-price="15.00">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+  </section>
+
+  <!-- Shopping Cart Section -->
+  <section class="cart-section container">
+    <h3 class="text-center">Your Cart</h3>
+    <ul class="list-group" id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <div class="text-right mt-3">
+      <h5>Total: $<span id="total-price">0.00</span></h5>
+      <button class="btn btn-primary">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <p>&copy; 2024 Beauty Brand | All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript for adding items to the cart
+    $(document).ready(function() {
+      let totalPrice = 0;
+
+      // Add to cart functionality
+      $('.add-to-cart').click(function() {
+        let product = $(this).data('product');
+        let price = parseFloat($(this).data('price'));
+
+        // Add product to the cart
+        $('#cart-items').append('<li class="list-group-item">' + product + ' - $' + price.toFixed(2) + '</li>');
+
+        // Update total price
+        totalPrice += price;
+        $('#total-price').text(totalPrice.toFixed(2));
+      });
+    });
+  </script>
+</body>
+</html>

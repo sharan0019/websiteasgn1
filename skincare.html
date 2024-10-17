@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Brand - Skin Care Products</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Custom pink theme styling */
+    body {
+      background-color: #ffe6f0; /* Light pink background */
+    }
+    .navbar {
+      background-color: #ff99cc; /* Soft pink for navbar */
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important; /* White text for navbar */
+    }
+    .navbar-toggler {
+      border-color: #fff; /* White border for mobile toggle */
+    }
+    h2 {
+      color: #ff66b2; /* Pink heading color */
+    }
+    h5 {
+      color: #ff66b2; /* Pink product titles */
+    }
+    .btn-primary {
+      background-color: #ff66b2;
+      border-color: #ff66b2;
+    }
+    .card {
+      border: none;
+    }
+
+    /* Ensuring uniform size for all product images */
+    .card-img-top {
+      width: 100%;
+      height: 250px; /* You can adjust this height */
+      object-fit: cover; /* This ensures the image covers the area without stretching */
+    }
+
+    footer {
+      background-color: #ff99cc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Beauty Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="makeup.html">Makeup</a></li>
+        <li class="nav-item active"><a class="nav-link" href="skincare.html">Skin Care</a></li>
+        <li class="nav-item"><a class="nav-link" href="buyskincare.html">buy</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Skin Care Products Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Skin Care Products</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="hydrating.jpeg" class="card-img-top" alt="Skin Care Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Hydrating Cream</h5>
+              <p class="card-text">Keep your skin moisturized and glowing with our Hydrating Cream.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a> <!-- Changed "View More" to "Buy Now" -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="anti aging.jpeg" class="card-img-top" alt="Skin Care Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Anti-Aging Serum</h5>
+              <p class="card-text">Combat signs of aging with our powerful Anti-Aging Serum.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a> <!-- Changed "View More" to "Buy Now" -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="brightning mask.jpeg" class="card-img-top" alt="Skin Care Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Brightening Mask</h5>
+              <p class="card-text">Revitalize your skin with our Brightening Mask for a radiant glow.</p>
+              <a href="#" class="btn btn-primary">Buy Now</a> <!-- Changed "View More" to "Buy Now" -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <p>&copy; 2024 Beauty Brand | All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
